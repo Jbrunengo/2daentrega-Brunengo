@@ -12,13 +12,19 @@ const NavBar = () => {
             <div className="Categorias">
                 <ul class="nav nav-pills nav-fill">
                     <li class="nav-item">
-                        <NavLink to={'/category/Pisos'} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}> Pisos</NavLink>
+                        <div className="alert alert-secondary">
+                        <NavLink to={'/category/Pisos'} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'} > Pisos</NavLink>
+                        </div>
                     </li>
                     <li class="nav-item">
+                        <div className="alert alert-success">
                         <NavLink to={'/category/Impermabilizaciones'} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}> Impermeabilizaciones</NavLink>
+                        </div>
                     </li>
                     <li class="nav-item">
+                        <div className="alert alert-secondary">
                         <NavLink to={'/category/Reparacion y Refuerzo'} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}> Reparacion y refuerzo</NavLink>
+                        </div>
                     </li>
                 </ul>
             </div>

@@ -6,7 +6,7 @@ const products = [
         name: 'Sellador Poliuretanico x 600gr.',
         precio: 4500,
         category: 'Pisos',
-        img: '/Assets/salchicha02.jpg',
+        img: 'https://ibb.co/ChkKhDS',
         stock: 500,
         descripcion: 'Es un sellador de poliuretano monocomponente que sella rápidamente por reacción con la humedad atmosférica. El sellador polimeriza formando una unión duradera, flexible e impermeable con la mayor parte de los materiales de construcción y con cualquier combinación.',
     },

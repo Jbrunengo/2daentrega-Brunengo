@@ -1,12 +1,9 @@
-/* .fondo{
- background-image: url(./components/Assets/fondo.jpg); */
+.fondo{
+ background-image: url(https://ibb.co/Cv6w2Fd);
+}
 
 
 .logo{
-  width: 150px;
-  height: auto;  
+  width: 170px;
+  height: auto;    
 } 
-/* .Saludo{
-  opacity: 0;
-  border: solid black 3px;
-} */
