@@ -1,12 +1,12 @@
 import React from 'react'
 import ItemCount from '../ItemCount/ItemCount'
 import './ItemDetail.css'
-import { useEstate } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const ItemDetail = ({ id, name, img, category, descripcion, price, stock }) => {
 
-    const [quantityAdded, setQuantityAdded] = useEstate(0)
+    const [quantityAdded, setQuantityAdded] = useState(0)
 
     const handleOnAdd = (quantity) => {
         setQuantityAdded(quantity)
@@ -14,12 +14,12 @@ const ItemDetail = ({ id, name, img, category, descripcion, price, stock }) => {
 
     return (
         <>
-            <div class="card">
-                <img class="card-img-top" src={img} alt={name} />
-                <div class="card-body">
-                    <h4 class="card-title">{category}</h4>
-                    <p class="card-text">{price}</p>
-                    <p class="card-text">{descripcion}</p>
+            <div className="card">
+                <img className="card-img-top" src={img} alt={name} />
+                <div className="card-body">
+                    <h4 className="card-title">{category}</h4>
+                    <p className="card-text">{price}</p>
+                    <p className="card-text">{descripcion}</p>
                 </div>
                 
                     {quantityAdded > 0 ? (

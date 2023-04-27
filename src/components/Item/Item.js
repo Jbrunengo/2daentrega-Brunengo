@@ -14,7 +14,7 @@ const Item = ({ id, name, img, price, stock, category }) => {
                         </div>
                         <img src={img} alt={name} />
                         <div className="card-body">
-                        <botton type="button" className="btn btn-info"> <Link to={'/item/${id}'}>Ver detalle</Link></botton>
+                        <Link className="btn btn-info" to={`/item/${id}`}>Ver detalle</Link>
                         </div>
                     </div>
                 </div>
