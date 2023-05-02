@@ -1,10 +1,14 @@
 import CardWidget from "../CardWidget/CardWidget"
-import logo from '../Assets/logo.png'
 import './NavBar.css'
 import { Link, NavLink } from "react-router-dom"
+import logo from '../../assets/logo.png'    
 
 const NavBar = () => {
     return (
+        <>
+        <div>
+            <img className="logo" src={logo} alt="logo" />
+        </div>
         <nav className="NavBar">
             <Link to='/'>
                 <h3>CorralonWeb</h3>
@@ -18,7 +22,7 @@ const NavBar = () => {
                     </li>
                     <li className="nav-item">
                         <div className="alert alert-success">
-                        <NavLink to={'/category/Impermabilizaciones'} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}> Impermeabilizaciones</NavLink>
+                        <NavLink to={'/category/Impermeabilizaciones'} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}> Impermeabilizaciones</NavLink>
                         </div>
                     </li>
                     <li className="nav-item">
@@ -29,6 +33,7 @@ const NavBar = () => {
                 </ul>
             </div>
         </nav>
+        </>
     )
 }
 export default NavBar
