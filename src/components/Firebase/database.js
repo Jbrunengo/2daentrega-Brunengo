@@ -1,7 +1,7 @@
 
 import { initializeApp } from "firebase/app";
 import {getFirestore} from 'firebase/firestore'
-import {Timestamp, writeBatch, collection, where, doc } from "firebase/firestore";
+import { Timestamp, addDoc, collection, documentId, where, writeBatch, getDocs, query } from "firebase/firestore"
 
 
 const firebaseConfig = {
