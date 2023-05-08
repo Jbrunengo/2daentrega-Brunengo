@@ -56,7 +56,7 @@ const products = [
         category: 'Impermeabilizaciones',
         img: '/Assets/mantageo.jpg',
         stock: 1000,
-        descripcion: ' es una malla no tejida, fabricada a partir de filamentos continuos de poliéster al 100%, no reticulados, unidos mecánicamente por agujas, sin resinasni colas, para refuerzo de membranas líquidas',
+        descripcion: '  uesna malla no tejida, fabricada a partir de filamentos continuos de poliéster al 100%, no reticulados, unidos mecánicamente por agujas, sin resinasni colas, para refuerzo de membranas líquidas',
     },
     {
         id: 7,

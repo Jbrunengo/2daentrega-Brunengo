@@ -13,8 +13,8 @@ const ItemListContainer = ({ greeting }) => {
         setLoading(true)
 
         const collectionRef = categoryId
-            ? query (collection(db, 'products'), where('category', '==', categoryId))
-            : collection(db, 'products')
+            ? query (collection(db, 'Productos'), where('category', '==', categoryId))
+            : collection(db, 'Productos')
         getDocs(collectionRef)
             .then(response => {
                 const productsAdapted = response.docs.map(doc => {

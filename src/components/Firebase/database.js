@@ -1,10 +1,9 @@
-// Import the functions you need from the SDKs you need
+
 import { initializeApp } from "firebase/app";
 import {getFirestore} from 'firebase/firestore'
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import {Timestamp, writeBatch, collection, where, doc } from "firebase/firestore";
 
-// Your web app's Firebase configuration
+
 const firebaseConfig = {
   apiKey: "AIzaSyBf-zDgzsz7zuXACzFn6UCLQczpLy8CQwc",
   authDomain: "corralonweb-21bc6.firebaseapp.com",
@@ -14,7 +13,13 @@ const firebaseConfig = {
   appId: "1:756649107021:web:f2db69383871003035c604"
 };
 
-// Initialize Firebase
+
 const app = initializeApp(firebaseConfig);
+const batch = writeBatch(db);
+const citiesRef = collection(db, "cities");
+const query = where("state", "==", "CA");
+const docRef = doc(citiesRef, "SF");
+const timestamp = Timestamp.fromDate(new Date());
 
 export const db = getFirestore (app);
+
