@@ -3,13 +3,14 @@ import ItemCount from '../ItemCount/ItemCount'
 import './ItemDetail.css'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { cartContext } from '../../context/CartContext'
+import { useContext } from 'react'
+import { CartContext } from '../../context/CartContext'
 
 const ItemDetail = ({ id, name, img, category, descripcion, price, stock }) => {
 
     const [quantityAdded, setQuantityAdded] = useState(0)
 
-    const {addItem} = useContext (cartContext)
+    const {addItem} = useContext (CartContext)
 
     const handleOnAdd = (quantity) => {
         setQuantityAdded(quantity)
