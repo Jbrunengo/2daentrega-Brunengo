@@ -22,7 +22,7 @@ const CheckoutForm = ({ onConfirm }) => {
                 <label className='Label'>
                     Nombre
                     <input className='Input'
-                        type='text' placeholder='María Beatriz'
+                        type='text' placeholder='Joaquin Brunengo'
                         value={name}
                         onChange={({ target }) => setName(target.value)}
                     />
@@ -30,7 +30,7 @@ const CheckoutForm = ({ onConfirm }) => {
                 <label className='Label'>
                     Telefono
                     <input className='Input'
-                        type='text' placeholder='11 5555-5555'
+                        type='text' placeholder='351 3712837'
                         value={phone}
                         onChange={({ target }) => setPhone(target.value)}
                     />
@@ -38,7 +38,7 @@ const CheckoutForm = ({ onConfirm }) => {
                 <label className='Label'>
                     Email
                     <input className='InputEmail'
-                        type="email" name="email" required placeholder='maria@xxxxx'
+                        type="email" name="email" required placeholder='joaquin@mail'
                         value={email}
                         onChange={({ target }) => setEmail(target.value)}
                     />

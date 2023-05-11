@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Item.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Item = ({ id, name, img, price, stock, category }) => {
+const Item = ({ id, name, img, Precio, stock, category }) => {
     return (
         <>
             <div className="container col-6">

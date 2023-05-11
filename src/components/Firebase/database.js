@@ -16,10 +16,5 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 
-const batch = writeBatch(db);
-const citiesRef = collection(db, "cities");
-const query = where("state", "==", "CA");
-const docRef = doc(citiesRef, "SF");
-const timestamp = Timestamp.fromDate(new Date());
 
 
