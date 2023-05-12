@@ -74,8 +74,7 @@ const Checkout = () => {
     }
 
     return (
-        <div className="checkoutText">
-            <h1>Checkout</h1>
+        <div>
             <CheckoutForm onConfirm={createOrder} />
         </div>
     )

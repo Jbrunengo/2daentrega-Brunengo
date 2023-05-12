@@ -24,9 +24,8 @@ const ItemDetail = ({ id, name, img, category, descripcion, Precio, stock }) => 
         <>
             <div className="card col-6">
                 <img className="card-img" src={img} alt={name}/>
-                <div className="card-body">
-                    <h4 className="card-title">{category}</h4>
-                    <p className="card-text">{Precio}</p>
+                <div className="card-body">                   
+                    <p className="card-text">${Precio}</p>
                     <p className="card-text">{descripcion}</p>
                 </div>
                 

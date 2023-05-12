@@ -1,4 +1,3 @@
-import ItemDetail from '../ItemDetail/ItemDetail'
 import { Link } from 'react-router-dom';
 import './Item.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -7,7 +6,7 @@ const Item = ({ id, name, img, Precio, stock, category }) => {
     return (
         <>
             <div className="container col-6">
-                <div className="row ">
+              
                     <div className="card">
                         <div className="card-body">
                             <p className="card-text">{category}</p>
@@ -18,7 +17,7 @@ const Item = ({ id, name, img, Precio, stock, category }) => {
                         </div>
                     </div>
                 </div>
-            </div>
+            
         </>
     )
 }

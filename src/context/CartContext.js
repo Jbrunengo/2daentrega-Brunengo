@@ -13,14 +13,16 @@ export const CartProvider = ({ children }) => {
         if (!isInCart(item.id)) {
                 setCart(prev => [...prev, { ...item, quantity }])
                 setTotalQuantity(prev => prev + quantity)
-                setTotal(prev => prev + item.price * quantity)
+                console.log(item.Precio)
+                console.log(quantity)
+                setTotal(prev => prev + (item.Precio * quantity))
             } else {
                 console.error ('Producto ya agregado')
         }
     }
     const removeItem = (itemId) => {
         const cartUpdated = cart.find(prod => prod.id !== itemId)
-        setCart(prev => prev.filter(prod => prod.id !== itemId))
+        setCart(prev => prev.find(prod => prod.id !== itemId))
         setTotalQuantity(prev => prev - cartUpdated.quantity)
         setTotal(prev => prev - cartUpdated.price * cartUpdated.quantity)
     }
